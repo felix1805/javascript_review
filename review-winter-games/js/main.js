@@ -46,6 +46,16 @@ function evenArray2(array) {
 }
 console.log(evenArray2([12,356,7,8]))
 
+function array3even(array) {
+  let even3array = []
+  array.foreach(num => {
+    if (num %2===0) {
+      even3array.push(num)
+    }
+  })
+  return(even3array)
+}
+ console.log(array3even([12,3,5,6,7]))
 
 
 

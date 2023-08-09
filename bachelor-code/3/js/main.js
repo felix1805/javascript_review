@@ -71,8 +71,19 @@ Array.from(contestant2).forEach(element => element.addEventListener('click', che
 
 function checkContest(click) {
 	if (click.target.classList.contains('rose')) {
-		document.querySelectorAll('#nikki').classList.toggle('hidden')
+		document.querySelector('#nikki').classList.toggle('hidden')
 	} else {
 		alert('niet')
 	}
+}
+
+const contestant3 = document.querySelectorAll('.contestant')
+
+Array.from(contestant3).forEach(element => element.addEventListener('click', checkContest3))
+
+function checkContest3(click) {
+	if (click.target.classList.contains('rose')) {
+		document.querySelector('#nikki').classList.toggle('hidden')
+	} else 
+	alert('nope')
 }
