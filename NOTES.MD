@@ -41,3 +41,5 @@ function sumOfNum2() {
 node backend work should be next video after javascript lesson
 
 5:07:53
+
+lesson 14: 2:49:57
