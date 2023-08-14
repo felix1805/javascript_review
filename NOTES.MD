@@ -42,4 +42,7 @@ node backend work should be next video after javascript lesson
 
 5:07:53
 
-lesson 14: 2:49:57
+lesson 19: 2:26:40
+
+WATCH CLASS ON NETWORKING
+CODEWARS
