@@ -1,3 +1,6 @@
+let bestColors = ['green', 'blue', 'red']
+bestColors.forEach((x,i) => console.log(x))
+
 //Create an array of movies with at least three movies.
 let newArr = ['movieA', 'movieB', 'movieC']
 //Using the array from above, store the first movie in a variable
