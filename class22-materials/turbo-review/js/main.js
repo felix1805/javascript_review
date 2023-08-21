@@ -41,6 +41,11 @@ function botVsYou(playerChoice) {
     console.log('You Tied')
   }
 }
-botVsYou('paper')
+// botVsYou('paper')
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+function checkXwin(array){
+array.forEach(element => botVsYou(element))
+}
+
+checkXwin(['rock', 'paper','scissors','rock', 'paper','scissors'])
