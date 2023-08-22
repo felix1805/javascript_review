@@ -46,3 +46,5 @@ lesson 19: 2:26:40
 
 WATCH CLASS ON NETWORKING
 CODEWARS
+
+class 23: timestamp 25:52 for contribution instructions
