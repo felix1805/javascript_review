@@ -8,11 +8,11 @@ let drink = document.querySelector('input').value
   fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res => res.json())
     .then(data => {
-      console.log(data.drinks[0]
+      console.log(data.drinks
       )
-      document.querySelector('img').src = data.drinks[0].strDrinkThumb
-      document.querySelector('h2').innerText = data.drinks[0].strDrink
-      document.querySelector('h3').innerText = data.drinks[0].strInstructions
+      document.querySelector('img').src = data.drinks[0,1,2,3].strDrinkThumb
+      document.querySelector('h2').innerText = data.drinks[0,1,2,3].strDrink
+      document.querySelector('h3').innerText = data.drinks[0,1,2,3].strInstructions
     })
     .catch(err => {
       console.error('oops', err)
