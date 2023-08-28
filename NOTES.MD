@@ -52,3 +52,5 @@ class 23: timestamp 25:52 for contribution instructions
 MICROSOFT COGNITIVE API = CHECK IT OUT
 REVIEW OBJECTS SHOTS FROM LESSON 26 => get multiple cocktails to list with pictures 
 
+class 27, finish card game by adding scoring system. 
+
