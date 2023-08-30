@@ -54,3 +54,6 @@ REVIEW OBJECTS SHOTS FROM LESSON 26 => get multiple cocktails to list with pictu
 
 class 27, finish card game by adding scoring system. 
 
+active recall
+spaced repitition
+
