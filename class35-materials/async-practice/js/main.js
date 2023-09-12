@@ -13,18 +13,18 @@
 // houseThree()
 
 //Code 02
-// function houseOne(){
-//     console.log('Paper delivered to house 1')
-// }
-// function houseTwo(){
-//     setTimeout(() => console.log('Paper delivered to house 2'), 3000)
-// }
-// function houseThree(){
-//     console.log('Paper delivered to house 3')
-// }
-// houseOne()
-// houseTwo()
-// houseThree()
+function houseOne(){
+    console.log('Paper delivered to house 1')
+}
+function houseTwo(){
+    setTimeout(() => console.log('Paper delivered to house 2'), 0)
+}
+function houseThree(){
+    setTimeout(() => console.log('Paper delivered to house 3'),0)
+}
+houseOne()
+houseTwo()
+houseThree()
 
 //Code 03
 // function houseOne(){
@@ -57,18 +57,18 @@
 // houseOne()
 
 //Code 05
-const promise = new Promise((resolve, reject) => {
-    const error = false
-    if(!error){
-        resolve('Promise has been fullfilled')
-    }else{
-        reject('Error: Operation has failed')
-    }
-})
-console.log(promise)
-promise
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+// const promise = new Promise((resolve, reject) => {
+//     const error = false
+//     if(!error){
+//         resolve('Promise has been fullfilled')
+//     }else{
+//         reject('Error: Operation has failed')
+//     }
+// })
+// console.log(promise)
+// promise
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
 
 //Code 06
 // function houseOne(){
@@ -141,4 +141,12 @@ promise
 //     console.log(data)
 // }
 // getACuteDogPhoto()
+
+// let stack = []
+// stack.push(2)
+// stack.push(5)
+// stack.pop()
+// stack.shift()
+
+// console.log(stack)
 

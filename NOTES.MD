@@ -58,4 +58,9 @@ active recall
 spaced repitition
 
 https://wesbos.com/javascript/04-the-dom/cardio =>  REVIEW
+===========
+PHILIP ROBERTS
+JAKE ARCHIBALD
+===========
+TOPICS FOR NODE^
 
