@@ -31,12 +31,14 @@ const server = http.createServer((req, res) => {
   }
   else if (page == '/api') {
     if('student' in params){
-      if(params['student']== 'leon'){
+      if(params['student']== 'felix'){
         res.writeHead(200, {'Content-Type': 'application/json'});
+        let flipRes = Math.ceil(Math.random * 2) === 1? 'tails' : 'heads'
         const objToJson = {
-          name: "leon",
+          name: "felix",
           status: "Boss Man",
-          currentOccupation: "Baller"
+          currentOccupation: "Baller",
+          flip: flipRes
         }
         res.end(JSON.stringify(objToJson));
       }//student = leon

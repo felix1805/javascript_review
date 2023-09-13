@@ -7,7 +7,9 @@ async function makeReq(){
   const data = await res.json()
 
   console.log(data);
+  console.log(data.flip)
   document.querySelector("#personName").textContent = data.name
   document.querySelector("#personStatus").textContent = data.status
   document.querySelector("#personOccupation").textContent = data.currentOccupation
+  document.querySelector("#headsOrTails").textContent = data.flip
 }
