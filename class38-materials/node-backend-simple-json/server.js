@@ -31,14 +31,12 @@ const server = http.createServer((req, res) => {
   }
   else if (page == '/api') {
     if('student' in params){
-      if(params['student']== 'felix'){
+      if(params['student']== 'leon'){
         res.writeHead(200, {'Content-Type': 'application/json'});
-        let flipRes = Math.ceil(Math.random * 2) === 1? 'tails' : 'heads'
         const objToJson = {
-          name: "felix",
+          name: "leon",
           status: "Boss Man",
-          currentOccupation: "Baller",
-          flip: flipRes
+          currentOccupation: "Baller"
         }
         res.end(JSON.stringify(objToJson));
       }//student = leon
@@ -78,11 +76,3 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(8000);
-
-let queue = []
-
-queue.push(2)
-queue.push(5)
-
-let i = queue.shift()
-alert(i)

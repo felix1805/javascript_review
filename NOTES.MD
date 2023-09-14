@@ -61,6 +61,13 @@ https://wesbos.com/javascript/04-the-dom/cardio =>  REVIEW
 ===========
 PHILIP ROBERTS
 JAKE ARCHIBALD
+Zell Liew
 ===========
 TOPICS FOR NODE^
+
+=================
+
+The bank anki
+
+CRUD = create(post), read(get), update(put), delete(delete)
 
