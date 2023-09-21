@@ -69,5 +69,14 @@ TOPICS FOR NODE^
 
 The bank anki
 
-CRUD = create(post), read(get), update(put), delete(delete)
+CRUD = 
+create(post) = make something, 
+read(get) = get something, 
+update(put) = change something, 
+delete(delete) = remove something
 
+==================
+
+class 41 @ 2:30:00 -> neccessary parts to allow for personal mongodb atlas access. 
+
+review ejs - build app with express and mongo db, maybe ejs with it. 
