@@ -77,6 +77,8 @@ delete(delete) = remove something
 
 ==================
 
-class 41 @ 2:30:00 -> neccessary parts to allow for personal mongodb atlas access. 
+class 41 @ 2:30:00 -> neccessary parts to allow for personal mongodb atlas access. (instructions also at end of slides for lesson(might be in 44/45))
+
+check mayanwolfe and roofio vods
 
 review ejs - build app with express and mongo db, maybe ejs with it. 
