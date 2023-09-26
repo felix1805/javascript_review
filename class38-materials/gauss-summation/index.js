@@ -25,3 +25,16 @@ function gaussianSummation(arr) {
 const numbers = [1, 2, 3, 4, 5, 2000];
 const result = gaussianSummation(numbers);
 console.log(result)
+
+
+function gaussArray(array) {
+  sum = 0
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+return sum
+}
+
+const numbers2 = [1,2,4,65,67,7]
+const result2 = gaussArray(numbers2)
+console.log(result2)
