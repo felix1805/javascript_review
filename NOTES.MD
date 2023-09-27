@@ -76,6 +76,11 @@ update(put) = change something,
 delete(delete) = remove something
 
 ==================
+MVC Model - model view controller
+https://developer.mozilla.org/en-US/docs/Glossary/MVC
+![MVC Model - model view controller](image.png)
+
+==================
 
 class 41 @ 2:30:00 -> neccessary parts to allow for personal mongodb atlas access. (instructions also at end of slides for lesson(might be in 44/45))
 
