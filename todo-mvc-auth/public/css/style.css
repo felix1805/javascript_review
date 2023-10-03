@@ -3,10 +3,8 @@ h1{
 }
 .completed{
     text-decoration: line-through;
-    color: purple;
-
+    color: gray;
 }
 .not{
     text-decoration: underline;
-    color: blue;
 }
