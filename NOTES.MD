@@ -87,3 +87,5 @@ class 41 @ 2:30:00 -> neccessary parts to allow for personal mongodb atlas acces
 check mayanwolfe and roofio vods
 
 review ejs - build app with express and mongo db, maybe ejs with it.   
+
+2:16

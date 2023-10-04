@@ -65,17 +65,17 @@
 // }
 
 
-const contestant2 = document.querySelectorAll('.contestant')
+// const contestant2 = document.querySelectorAll('.contestant')
 
-Array.from(contestant2).forEach(element => element.addEventListener('click', checkContest))
+// Array.from(contestant2).forEach(element => element.addEventListener('click', checkContest))
 
-function checkContest(click) {
-	if (click.target.classList.contains('rose')) {
-		document.querySelector('#nikki').classList.toggle('hidden')
-	} else {
-		alert('niet')
-	}
-}
+// function checkContest(click) {
+// 	if (click.target.classList.contains('rose')) {
+// 		document.querySelector('#nikki').classList.toggle('hidden')
+// 	} else {
+// 		alert('niet')
+// 	}
+// }
 
 const contestant3 = document.querySelectorAll('.contestant')
 

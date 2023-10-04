@@ -49,3 +49,13 @@ array.forEach(element => botVsYou(element))
 }
 
 checkXwin(['rock', 'paper','scissors','rock', 'paper','scissors'])
+
+let stopwatch = {}
+
+stopwatch.currentTime = 12
+
+stopwatch.displayTime = function(time) {
+  console.log('the current time is ' + time)
+}
+
+stopwatch.displayTime(stopwatch.currentTime)
