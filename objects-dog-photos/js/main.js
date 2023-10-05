@@ -9,7 +9,7 @@
 //     console.error('oops', err)
 //   });
 
-fetch('https://dog.ceo/api/breeds/image/random')
+fetch('https://dog.ceo/api/pitbulls/image/random')
 .then(res => res.json())
 .then(data => {
   console.log(data.message)
