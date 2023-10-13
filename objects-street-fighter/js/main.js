@@ -45,3 +45,5 @@ class SFConstructor2 {
 }
 
 let mrMyagi2 = new SFConstructor2('MrMiyagi2', 'Galabeya', 147, 300)
+
+
