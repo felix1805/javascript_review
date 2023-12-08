@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <style>
+    /* Add a style to hide the 'old' and 'young' elements by default */
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your HTML content here -->
+  <div id="old" class="hidden">
+    <p>Welcome, <span id="oldUserNamePlaceholder"></span>! You may continue.</p>
+  </div>
+
+  <div id="young" class="hidden">
+    <p>You are not old enough, <span id="youngUserNamePlaceholder"></span>.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const userAuth = () => {
+        let ageCheck = confirm('Are you at least 18 years old?');
+        let userName = prompt('What is your name?');
+        let ageVerify = prompt('How old are you?');
+
+        if (ageCheck === true && ageVerify >= 18) {
+          const old = document.getElementById('old');
+          if (old) {
+            old.classList.toggle('hidden');
+          }
+          // Set the obtained userName in the HTML
+          document.getElementById('oldUserNamePlaceholder').textContent = userName;
+          alert(`Hello ${userName}, You may continue`);
+        } else {
+          const young = document.getElementById('young');
+          if (young) {
+            young.classList.toggle('hidden');
+          }
+          // Set the obtained userName in the HTML
+          document.getElementById('youngUserNamePlaceholder').textContent = userName;
+          alert(`You are not old enough, ${userName}`);
+        }
+      }
+
+      userAuth();
+    });
+  </script>
+
+</body>
+</html>
