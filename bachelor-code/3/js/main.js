@@ -13,19 +13,7 @@
 // create array from previous variable, use foreach to add event listener to run function for click event
 // use else if to target correct classlist and see if it contains result, alert if wrong
 
-// const finalContestant = document.querySelectorAll('.contestant')
 
-
-// Array.from(finalContestant).forEach(element => element.addEventListener('click', runCheckFinalContestant))
-
-// function runCheckFinalContestant(click) {
-// 	if (click.target.classList.contains('rose')) {
-// 		document.querySelector('#nikki').classList.toggle('hidden')
-// 	} else {
-// 		alert('nope')
-// 		document.querySelector('#pElement').classList.toggle('hidden')		
-// 	}
-// }
 
 // const contestantList = document.querySelectorAll('.contestant')
 
@@ -77,13 +65,42 @@
 // 	}
 // }
 
-const contestant3 = document.querySelectorAll('.contestant')
+// const contestant3 = document.querySelectorAll('.contestant')
 
-Array.from(contestant3).forEach(element => element.addEventListener('click', checkContest3))
+// Array.from(contestant3).forEach(element => element.addEventListener('click', checkContest3))
 
-function checkContest3(click) {
+// function checkContest3(click) {
+// 	if (click.target.classList.contains('rose')) {
+// 		document.querySelector('#nikki').classList.toggle('hidden')
+// 		document.querySelector('#pElement').classList.add('hidden')
+// 	} else {
+// 		alert('nope')
+// 		document.querySelector('#pElement').classList.toggle('hidden')
+// 		document.querySelector('#nikki').classList.add('hidden')
+// 	}
+// }
+
+// const finalContestant = document.querySelectorAll('.contestant')
+
+
+// Array.from(finalContestant).forEach(element => element.addEventListener('click', runCheckFinalContestant))
+
+// function runCheckFinalContestant(click) {
+// 	if (click.target.classList.contains('rose')) {
+// 		document.querySelector('#nikki').classList.toggle('hidden')
+// 	} else {
+// 		alert('nope')	
+// 	}
+// }
+
+const finalContestant = document.querySelectorAll('.contestant')
+
+Array.from(finalContestant).forEach(element => element.addEventListener('click', checkFunction))
+
+function checkFunction(click) {
 	if (click.target.classList.contains('rose')) {
-		document.querySelector('#nikki').classList.toggle('hidden')
-	} else 
-	alert('nope')
+		document.querySelector("#nikki").classList.toggle('hidden')
+	} else {
+		alert('not the right contestant, sorry.')
+	}
 }

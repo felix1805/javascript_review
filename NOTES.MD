@@ -70,6 +70,7 @@ TOPICS FOR NODE^
 The bank anki
 
 CRUD = 
+
 create(post) = make something, 
 read(get) = get something, 
 update(put) = change something, 
@@ -100,3 +101,20 @@ check mayanwolfe and roofio vods
 review ejs - build app with express and mongo db, maybe ejs with it.   
 
 2:16
+
+===================
+
+Air Quality app API Token: 007ab308004fc4fe9cd4822403041200eb3a30c5
+email used was mau5master
+
+===================
+
+REACT NOTES:
+
+npx create-react-app . => creates app in current directory
+
+-react handles .env variables natively, and typically does not require dotenv to be installed.
+-react components in a return statement need to be wrapped in a single argument, such as a div, to make sure react can treat multiple items as an individual component.
+![EXAMPLE](image-4.png)
+
+===================
