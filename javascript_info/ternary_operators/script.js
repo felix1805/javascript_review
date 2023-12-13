@@ -22,21 +22,32 @@
 // ================================================
 
 const loginFunction = () => {
-  let login = prompt('please provide your credentials')
-  let message = ''
-  if (login == 'Employee') {
-    message = console.log('hello')
-    console.log(login)
-    
-    
-  } else if (login == 'Director') {
-    message = alert('good day')
+  let login = prompt('Please provide your credentials');
+  let message = '';
+
+  if (login === 'Employee') {
+    alert('Hello');
+    message = 'Hello';
+  } else if (login === 'Director') {
+    alert('Good day');
+    message = 'Good day';
   } else {
-    message = alert('invalid credentials')
-    loginFunction()
+    alert('Invalid credentials');
+    message = 'Invalid credentials';
   }
-}
-loginFunction()
+
+  console.log(message);
+  loginFunction.login = login; // Attach login as a property of the function
+  return login;
+};
+
+// Call the function
+const userLogin = loginFunction();
+
+// Now, you can access loginFunction.login in the console
+console.log(loginFunction.login);
+
+
 
 // ================================================
 // let login = prompt('please enter your credentials')
