@@ -112,19 +112,19 @@
 let n = prompt("Please input a number");
 
 for (let i = 2; i <= n; i++) {
-    let isPrime = true; // Flag to track whether i is prime
+  let isPrime = true; // Flag to track whether i is prime
 
-    for (let j = 2; j < i; j++) { //removed <= Math.sqrt(i) for testing
-        if (i % j === 0) {
-            isPrime = false; // Set the flag to false if a divisor is found
-            break;
-        }
+  for (let j = 2; j < i; j++) { //removed <= Math.sqrt(i) for testing
+    if (i % j === 0) {
+      isPrime = false; // Set the flag to false if a divisor is found
+      console.log('value of j ' + j, 'value of i ' + i)
+      break;
     }
+  }
 
-    if (isPrime) {
-        alert(i);
-        console.log(i)
-    }
+  if (isPrime) {
+    console.log(i + ' is a prime number');
+  }
 }
 
 
