@@ -109,7 +109,7 @@
 // }
 
 
-let n = prompt("Please input a number");
+let n = +prompt("Please input a number");
 
 for (let i = 2; i <= n; i++) {
   let isPrime = true; // Flag to track whether i is prime
