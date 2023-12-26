@@ -31,3 +31,41 @@ function multiplyMenuNums(menu) {
 
 multiplyMenuNums(menu)
 multiplyMenuNums(menu)
+
+///////////////////////////////////////////////////////////
+
+let calculator = {
+  sum() {
+    return this.a + this.b
+  },
+  mult() {
+    return this.a * this.b
+  },
+
+  read() {
+    this.a = +prompt('value of a = ', 'a')
+    this.b = +prompt('value of b = ', 'b')
+  }
+}
+calculator.read()
+alert(calculator.sum())
+alert(calculator.mult())
+
+///////////////////////////////////////////////////////////
+
+let calculator2 = {
+  subt() {
+    return this.a - this.b
+  },
+  div() {
+    return this.a / this.b
+  },
+  comp() {
+    this.a = +prompt('please input value for a', 'a')
+    this.b = +prompt('please input value for b', 'b')
+  }
+}
+
+calculator2.comp()
+alert(calculator2.subt())
+alert(calculator2.div())
