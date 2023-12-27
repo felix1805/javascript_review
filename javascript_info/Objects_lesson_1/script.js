@@ -69,3 +69,64 @@ let calculator2 = {
 calculator2.comp()
 alert(calculator2.subt())
 alert(calculator2.div())
+
+/////////////////////////////////////////////////////////////////
+
+// Ladder object
+
+let ladder = {
+  step: 0,
+  up() {
+    this.step++
+    return this
+  },
+  down() {
+    this.step--
+    return this
+  },
+  showStep: function () {
+    alert(this.step)
+    return this
+  }
+}
+
+ladder.up()
+ladder.up()
+ladder.up()
+ladder.showStep()
+
+////////////////////////////////////////////////////////////
+let calculatorChaining = {
+  value: 0,
+  add(x) {
+    this.value += x;
+    return this;
+  },
+  subtract(x) {
+    this.value -= x;
+    return this;
+  },
+  multiply(x) {
+    this.value *= x;
+    return this;
+  },
+  divide(x) {
+    this.value /= x;
+    return this;
+  },
+  getValue() {
+    console.log(this.value);
+    return this;
+  }
+};
+calculatorChaining.add(5).multiply(2).subtract(3).divide(2).getValue();
+
+/////////////////////////////////////////////////
+
+function User(name,age) {
+  this.name = name;
+  this.age = age;
+  this.admin = true
+}
+
+let user = new User('John','30')

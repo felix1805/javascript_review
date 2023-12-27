@@ -9,7 +9,7 @@ function pow(base, exponent) {
   let calculationString = `${base}`; // initialize the string with the base
 
   for (let i = 1; i < exponent; i++) {
-    result = result * base; //returns intial multiplication, 3*3, loop runs twice (var2 -1), as ^3 requires 2 multiplication operations, thus returns 27
+    result = result * base; //returns intial multiplication, 3*3, loop runs twice (var2 -1), as ^3 requires 2 multiplication operations, thus returns 27, can be written as result *= base
 
     calculationString += ` * ${base}`; // append each multiplication step to the string
   }
