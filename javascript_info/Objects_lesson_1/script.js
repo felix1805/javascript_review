@@ -201,14 +201,46 @@
 
 // create a constructor function that takes in two values and adds them to an initial value
 
-let Accumulator = function (startingVal) {
-  this.value = startingVal
-  this.read = function () {
-    this.value += +prompt('please enter your accumulator')
-  }
+// let Accumulator = function (startingVal) {
+//   this.value = startingVal
+//   this.read = function () {
+//     this.value += +prompt('please enter your accumulator')
+//   }
+// }
+
+// let accumulator = new Accumulator(1)
+// accumulator.read()
+// accumulator.read()
+// alert(accumulator.value)
+
+
+//////////////////////////////////////////////////////////////
+
+// let Vehicle = function(make,model,year,drivetrain,rpm){
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.drivtrain = drivetrain
+//   this.revs = function(){
+//     alert('vroom')
+//     if (rpm > 8000) {
+//       alert(`hayai, it revs to ${rpm}rpm!`) 
+//     } else {
+//       alert('low rev engine')
+//     }
+//   }
+// }
+
+// let trueno = new Vehicle('Toyota','Trueno',1986,'RWD',9000)
+
+///////////////////////////////////////////////////////////////
+
+let key = 'name'
+let key2 = 'age'
+
+let user = {
+  name: 'Phil',
+  age: 30
 }
 
-let accumulator = new Accumulator(1)
-accumulator.read()
-accumulator.read()
-alert(accumulator.value)
+alert([key] + ' ' + user?.[key] + ' , ' + [key2] + user[key2])
