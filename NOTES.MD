@@ -118,3 +118,22 @@ npx create-react-app . => creates app in current directory
 ![EXAMPLE](image-4.png)
 
 ===================
+
+![Array Methods](image-5.png)
+![Array Comparison](image-6.png)
+
+Getting the elements:
+
+we can get element by its index, like arr[0]
+also we can use at(i) method that allows negative indexes. For negative values of i, it steps back from the end of the array. If i >= 0, it works same as arr[i].
+We can use an array as a deque with the following operations:
+
+push(...items) adds items to the end.
+pop() removes the element from the end and returns it.
+shift() removes the element from the beginning and returns it.
+unshift(...items) adds items to the beginning.
+To loop over the elements of the array:
+
+for (let i=0; i<arr.length; i++) – works fastest, old-browser-compatible.
+for (let item of arr) – the modern syntax for items only,
+for (let i in arr) – never use.
