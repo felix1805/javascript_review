@@ -15,7 +15,7 @@
 
 // for (let i = 0; i < array.length; i++) {
 //   alert(cars[i])
-  
+
 // }
 
 // ///////////////////////////////////////
@@ -50,14 +50,90 @@
 
 //////////////////////////////////////////
 
-function sumInput() {
-  let val1 = +prompt('input first value')
-  let val2 = +prompt('input second value')
+// function sumInput() {
+//   let val1 = +prompt('input first value')
+//   let val2 = +prompt('input second value')
 
-  let arr = [val1,val2]
-  console.log(arr)
+//   let arr = [val1,val2]
+//   console.log(arr)
 
-  return alert(val1 + val2)
+//   return alert(val1 + val2)
+// }
+
+// sumInput()
+
+////////////////////////////////////////////
+
+//  let sumInput2 = function() {
+//   let arr = []
+//   while (true) {
+//     let value = prompt('please enter a number')
+//     if (value === '' || value === null || value === undefined) {
+//       break
+//     }
+//     arr.push(+value)
+//   }
+//   let sum = 0
+//   for (let i = 0; i < arr.length; i++) {
+//     sum +=arr[i]
+//   }
+//   return sum
+// }
+// alert(sumInput2())
+
+/////////////////////////////////////////////
+// function sumInput() {
+
+//   let numbers = [];
+
+//   while (true) {
+
+//     let value = prompt("A number please?", 0);
+
+//     // should we cancel?
+//     if (value === "" || value === null || !isFinite(value)) break;
+
+//     numbers.push(+value);
+//     alert(numbers)
+//   }
+
+//   let sum = 0;
+//   for (let number of numbers) {
+//     sum += number;
+//   }
+//   return sum;
+// }
+
+// alert(sumInput());
+
+////////////////////////////////////////////////
+
+// function getMaxSubSum(arr) {
+//   let maxSum = 0;
+//   let partialSum = 0;
+
+//   for (let item of arr) { // for each item of arr
+//     partialSum += item; // add it to partialSum
+//     maxSum = Math.max(maxSum, partialSum); // remember the maximum
+//     if (partialSum < 0) partialSum = 0; // zero if negative
+//   }
+
+//   return maxSum;
+// }
+
+// alert(getMaxSubSum([-1, 2, 3, -9])); // 5
+
+let subSum = function (array) {
+  let sumMax = 0
+  let sumPartial = 0
+  for (let i = 0; i < array.length; i++) {
+    sumPartial += array[i]
+    sumMax = Math.max(sumMax, sumPartial)
+    if (sumPartial < 0) {
+      sumPartial = 0
+    }
+  }
+  return sumMax
 }
 
-sumInput()
+alert(subSum([-10,-9,200, 100]))

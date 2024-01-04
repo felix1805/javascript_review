@@ -122,6 +122,11 @@ npx create-react-app . => creates app in current directory
 ![Array Methods](image-5.png)
 ![Array Comparison](image-6.png)
 
+arr.push(...items) – adds items to the end,
+arr.pop() – extracts an item from the end,
+arr.shift() – extracts an item from the beginning,
+arr.unshift(...items) – adds items to the beginning.
+
 Getting the elements:
 
 we can get element by its index, like arr[0]
