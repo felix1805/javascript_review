@@ -136,4 +136,38 @@ let subSum = function (array) {
   return sumMax
 }
 
-alert(subSum([-10,-9,200, 100]))
+alert(subSum([-10, -9, 200, 100]))
+
+//////////////////////////////////////
+
+
+function camelized(str) {
+
+  return str.split('-')
+    .map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1))
+    .join('')
+}
+
+camelized('my-long-word')
+
+/////////////////////////////////////
+
+// splits 'my-long-word' into array ['my', 'long', 'word']
+// capitalizes first letters of all array items except the first one
+// converts ['my', 'long', 'word'] into ['my', 'Long', 'Word'] = map
+// joins ['my', 'Long', 'Word'] into 'myLongWord'
+
+const camelizer = str =>
+  str.split('-')
+    .map((word, index) => index === 0 ? word : word[0].toUpperCase() + word.slice(1))
+    .join('')
+
+camelizer('my-long-word')
+
+//////////////////////////////////////
+
+function filterRange(arr, var1, var2) {
+  let filtered = arr.filter(num => num >= var1 && num <= var2)
+  return filtered
+}
+alert(filterRange([1, 2, 3, 4, 5, 6], 1, 4))
