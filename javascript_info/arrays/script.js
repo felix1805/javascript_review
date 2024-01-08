@@ -171,3 +171,50 @@ function filterRange(arr, var1, var2) {
   return filtered
 }
 alert(filterRange([1, 2, 3, 4, 5, 6], 1, 4))
+
+/////////////////////////////////////
+
+function filterRangeInPlace(arr, var1, var2) {
+  for (let i = 0; i < arr.length; i++) {
+    let val = arr[i]
+    if (val < var1 || val > var2) {
+      arr.splice(i, 1)
+      i--
+    }
+  }
+}
+let arr = [1,2,3,4,5]
+filterRangeInPlace(arr,1,4)
+alert(arr)
+
+////////////////////////////////////
+
+function sortArr(arr) {
+  return arr.sort((a,b) => b-a)
+}
+
+alert(sortArr([1,2,3,4,5]))
+
+///////////////////////////////////
+
+let arr2 = ['c','b','a']
+let sorted = copySorted(arr2)
+
+function copySorted(arr2) {
+  return arr2.slice().sort()
+}
+
+alert(sorted)
+
+///////////////////////////////////
+
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users = [ john, pete, mary ];
+
+let usersMapped = users.map(user => ({}))
+
+alert(users)
+alert(names)
