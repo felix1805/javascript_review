@@ -208,13 +208,29 @@ alert(sorted)
 
 ///////////////////////////////////
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+// let john = { name: "John", surname: "Smith", id: 1 };
+// let pete = { name: "Pete", surname: "Hunt", id: 2 };
+// let mary = { name: "Mary", surname: "Key", id: 3 };
 
-let users = [ john, pete, mary ];
+// let users = [ john, pete, mary ];
 
-let usersMapped = users.map(user => ({}))
+// let usersMapped = users.map(user => ({
+//   fullName: `${user.name} ${user.surname}`,
+//   id: user.id
+// }))
 
-alert(users)
-alert(names)
+// alert(usersMapped[0])
+
+//////////////////////////////////
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let arr3 = [ pete, john, mary ];
+
+function sortByAge(arr3) {
+  arr3.sort((a,b) => a.age - b.age)
+}
+
+sortByAge(arr3);
