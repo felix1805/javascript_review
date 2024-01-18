@@ -213,3 +213,11 @@ arr.fill(value, start, end) – fills the array with repeating value from index 
 arr.copyWithin(target, start, end) – copies its elements from position start till position end into itself, at position target (overwrites existing).
 
 arr.flat(depth)/arr.flatMap(fn) create a new flat array from a multidimensional array.
+
+=========================================
+
+SHORT HAND FOR CREATING NESTED DIVS ETC 
+div>div*5 -> creates five divs nested in another div
+div{} -> adds content to div
+div[] -> adds things like class,id etc to div element
+
