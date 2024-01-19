@@ -45,7 +45,7 @@ cars.forEach((value, key, map) => {
 function unique(arr) {
 
   return Array.from(new Set(arr));
- 
+
 }
 
 
@@ -55,7 +55,29 @@ let values = ["Butter", "Sauce", "Butter", "Chicken",
 
 
 
-console.log(unique(values)); 
+console.log(unique(values));
 
 
 ///////////////////////
+
+
+function sumSalaries(salaries) {
+  let sum = 0
+  for (let salary of Object.values(salaries)) {
+    sum += salary
+  }
+  return sum
+}
+
+let salaries = {
+  'john': 300,
+  'bill': 400,
+  'mary': 400
+}
+console.log(sumSalaries(salaries))
+
+function countObj(salaries) {
+  return Object.keys(salaries).length
+}
+
+console.log(countObj(salaries))
