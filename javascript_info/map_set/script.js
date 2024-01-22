@@ -91,7 +91,7 @@ let user = {
 
 let {name, surName} = user
 function ageMod(inputVal) {
-user.age = 30
+user.age = +prompt('please specify original user age')
 let newAge = user.age + inputVal
 user.age = newAge
 return newAge
@@ -99,4 +99,5 @@ return newAge
 ageMod(43)
 
 
-console.log(user)
+let results = user
+console.log(results)
