@@ -84,20 +84,77 @@
 
 ////////////////////////////////
 
-let user = {
-  name: 'Felix',
-  surName: 'Petzsche'
-}
+// let user = {
+//   name: 'Felix',
+//   surName: 'Petzsche'
+// }
 
-let {name, surName} = user
-function ageMod(inputVal) {
-user.age = +prompt('please specify original user age')
-let newAge = user.age + inputVal
-user.age = newAge
-return newAge
-}
-ageMod(43)
+// let {name, surName} = user
+// function ageMod(inputVal) {
+// user.age = +prompt('please specify original user age')
+// let newAge = user.age + inputVal
+// user.age = newAge
+// return newAge
+// }
+// ageMod(43)
 
 
-let results = user
-console.log(results)
+// let results = user
+// console.log(results)
+
+// function diffSubtract(date1, date2) {
+//   return date2 - date1;
+// }
+
+// function diffGetTime(date1, date2) {
+//   return date2.getTime() - date1.getTime();
+// }
+
+// function bench(f) {
+//   let date1 = new Date(0);
+//   let date2 = new Date();
+
+//   let start = Date.now();
+//   for (let i = 0; i < 100000; i++) f(date1, date2);
+//   return Date.now() - start;
+// }
+
+// console.log( 'Time of diffSubtract: ' + bench(diffSubtract) + 'ms' );
+// console.log( 'Time of diffGetTime: ' + bench(diffGetTime) + 'ms' );
+
+let student = {
+  name: 'John',
+  age: 30,
+  isAdmin: false,
+  courses: ['html', 'css', 'js'],
+  spouse: null
+};
+
+let json = JSON.stringify(student)
+let jsonParse = JSON.parse(json)
+
+console.log(student)
+console.log(json)
+console.log(jsonParse)
+
+let arr = [
+  'Jim',
+  'Bill',
+  30,
+  'Phil',
+]
+let arrJson = JSON.stringify(arr)
+console.log(arr)
+console.log(arrJson)
+
+let meetup = {
+  title: "Conference",
+  room: {
+    number: 23,
+    participants: ["john", "ann"]
+  }
+};
+
+let meetupJSON = JSON.stringify(meetup)
+
+console.log(meetupJSON)
